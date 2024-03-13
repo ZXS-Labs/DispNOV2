@@ -1,0 +1,15 @@
+Australia/im0.png Australia/im1.png
+AustraliaP/im0.png AustraliaP/im1.png
+Bicycle2/im0.png Bicycle2/im1.png
+Classroom2/im0.png Classroom2/im1.png
+Classroom2E/im0.png Classroom2E/im1.png
+Computer/im0.png Computer/im1.png
+Crusade/im0.png Crusade/im1.png
+CrusadeP/im0.png CrusadeP/im1.png
+Djembe/im0.png Djembe/im1.png
+DjembeL/im0.png DjembeL/im1.png
+Hoops/im0.png Hoops/im1.png
+Livingroom/im0.png Livingroom/im1.png
+Newkuba/im0.png Newkuba/im1.png
+Plants/im0.png Plants/im1.png
+Staircase/im0.png Staircase/im1.png
