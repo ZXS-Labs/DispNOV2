@@ -3,10 +3,13 @@
 ![image](pic/network.jpg)
 
 ## Abstract
-​    In stereo matching, the domain adaptability of the model and the construction method of Cost Volume both play a crucial role. Therefore, Enhancing generalization capability and optimizing Cost Volume construction schemes are crucial for improving performance and practical applications.
-​    Mainstream models often struggle with domain adaptation due to fixed training scales and disparity search ranges, causing issues like poor generalization and unstable performance. This model introduces a novel stereo matching network structure based on neural operator, aiming to learn the mapping from the stereo image pair space to the disparity function space. Through random scale cropping, the model can learn features from different perspectives, meeting the user's requirements for testing at arbitrary scales and generating disparity maps at arbitrary resolutions.Additionally, the model can customize disparity range parameters based on dataset characteristics. To achieve training with variable scales and disparity ranges, we proposes a strategy for variable disparity step Cost Volume construction. Both strategies enhance the model's domain adaptation and generalization, better meeting the requirements of diverse application scenarios.
-​    Traditional self-attention mechanisms face significant computational resource consumption. To address this issue, we introduces the Galerkin attention mechanism to key modules: feature extraction and 3D aggregation. Galerkin attention surpasses traditional mechanisms in memory and time efficiency. Additionally, Galerkin attention is more suitable for integration with neural operators. The innovative application of the Galerkin attention mechanism to stereo matching networks aims to enhance network performance while optimizing time efficiency to the maximum extent.
-​    Through experiments on datasets like Scene Flow, KITTI, and Middlebury, we confirms that the proposed multi-scale training and variable disparity step Cost Volume construction significantly boosts accuracy compared to the baseline model. Additionally, the Galerkin attention mechanism improves performance on various metrics. Notably, the proposed model outperforms multiple mainstream network architectures, especially in handling large disparities or high-resolution images.
+​In stereo matching, the domain adaptability of the model and the construction method of Cost Volume both play a crucial role. Therefore, Enhancing generalization capability and optimizing Cost Volume construction schemes are crucial for improving performance and practical applications.
+
+​Mainstream models often struggle with domain adaptation due to fixed training scales and disparity search ranges, causing issues like poor generalization and unstable performance. This model introduces a novel stereo matching network structure based on neural operator, aiming to learn the mapping from the stereo image pair space to the disparity function space. Through random scale cropping, the model can learn features from different perspectives, meeting the user's requirements for testing at arbitrary scales and generating disparity maps at arbitrary resolutions.Additionally, the model can customize disparity range parameters based on dataset characteristics. To achieve training with variable scales and disparity ranges, we proposes a strategy for variable disparity step Cost Volume construction. Both strategies enhance the model's domain adaptation and generalization, better meeting the requirements of diverse application scenarios.
+
+Traditional self-attention mechanisms face significant computational resource consumption. To address this issue, we introduces the Galerkin attention mechanism to key modules: feature extraction and 3D aggregation. Galerkin attention surpasses traditional mechanisms in memory and time efficiency. Additionally, Galerkin attention is more suitable for integration with neural operators. The innovative application of the Galerkin attention mechanism to stereo matching networks aims to enhance network performance while optimizing time efficiency to the maximum extent.
+
+Through experiments on datasets like Scene Flow, KITTI, and Middlebury, we confirms that the proposed multi-scale training and variable disparity step Cost Volume construction significantly boosts accuracy compared to the baseline model. Additionally, the Galerkin attention mechanism improves performance on various metrics. Notably, the proposed model outperforms multiple mainstream network architectures, especially in handling large disparities or high-resolution images.
 
 ## How to use
 
@@ -47,7 +50,7 @@ Download [Scene Flow](https://lmb.informatik.uni-freiburg.de/resources/datasets/
 Synthetic dataset UnrealStereo4K is created by [Fabio Tosi](https://vision.disi.unibo.it/~ftosi/), refer to Link [SMD-Nets](https://github.com/fabiotosi92/SMD-Nets) for the method of downloading this dataset.
 
 
-***The files with 'DispNO' in the filename represent our proposed method, while those without 'DispNO' represent the baseline model HDA-Net.***
+***ATTENTION: The files with 'DispNO' in the filename represent our proposed method, while those without 'DispNO' represent the baseline model HDA-Net.***
 
 ### Train
 
@@ -274,21 +277,21 @@ Error map comparison (threshold=2.0, white area consists of pixels with error le
 <div style="display: flex; justify-content: space-around;">
     <div style="text-align: center;">
         <img src="pic/Middlebury/ACV.jpg" alt="Image 1" width="100%">
-        <p>ACVNet</p>
+        <p>(a) ACVNet</p>
     </div>
     <div style="text-align: center;">
         <img src="pic/Middlebury/RAFT.jpg" alt="Image 2" width="100%">
-        <p>RAFT-Stereo</p>
+        <p>(b) RAFT-Stereo</p>
     </div>
 </div>
 <div style="display: flex; justify-content: space-around;">
     <div style="text-align: center;">
         <img src="pic/Middlebury/LEA.jpg" alt="Image 1" width="100%">
-        <p>LEAStereo</p>
+        <p>(c) LEAStereo</p>
     </div>
     <div style="text-align: center;">
         <img src="pic/Middlebury/DispNO.jpg" alt="Image 2" width="100%">
-        <p>DispNO</p>
+        <p>(d) DispNO</p>
     </div>
 </div>
 
